@@ -1,0 +1,46 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+h1 {
+  color: #7c7c7c;
+  margin: 0;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.weather-icon {
+  height: 54px;
+  width: 54px;
+}
+
+.temperature {
+  font-size: 68px;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
