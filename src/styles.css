@@ -7,6 +7,10 @@ h1 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .weather-app {
   border: 1px solid #dadde1;
   padding: 15px;
@@ -43,4 +47,9 @@ h1 {
 
 .center {
   text-align: center;
+}
+
+.open-source {
+  margin: 20px auto;
+  max-width: 600px;
 }
