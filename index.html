@@ -20,7 +20,7 @@
       <div class="weather-app">
         <div class="row">
           <div class="col-6">
-            <form>
+            <form id="search-form">
               <input
                 type="search"
                 class="form-control mb-3 shadow-sm"
@@ -52,18 +52,15 @@
           <div class="col-6">
             <div class="flex-container">
               <div class="flex-child center">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                  alt="Cloudy icon"
-                  class="weather-icon"
-                />
-                <h3 id="city">Lviv</h3>
-                <h6 id="date">Tuesday 18:00</h6>
+                <img src="" alt="" class="weather-icon" id="icon" />
+                <h3 id="city"></h3>
+                <h6 id="date"></h6>
+                <h6 id="description"></h6>
               </div>
               <div class="flex-child">
-                <span class="temperature" id="temperature">19</span
+                <span class="temperature" id="temperature"></span
                 ><span class="units">
-                  <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="celsius-link" class="active">°C</a> |
                   <a href="#" id="fahrenheit-link">°F</a>
                 </span>
               </div>

@@ -4,7 +4,12 @@ body {
 
 h1 {
   color: #7c7c7c;
-  margin: 0;
+  margin: 0px;
+}
+
+h6 {
+  margin: 0px;
+  text-transform: capitalize;
 }
 
 a {
@@ -25,7 +30,7 @@ a {
 }
 
 .temperature {
-  font-size: 68px;
+  font-size: 58px;
 }
 
 .units {
@@ -52,4 +57,13 @@ a {
 .open-source {
   margin: 20px auto;
   max-width: 600px;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
 }
