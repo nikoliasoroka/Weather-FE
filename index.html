@@ -19,7 +19,7 @@
     <div class="container">
       <div class="weather-app">
         <div class="row">
-          <div class="col-6">
+          <div class="col">
             <form id="search-form">
               <input
                 type="search"
@@ -27,8 +27,8 @@
                 id="search"
                 placeholder="Search"
               />
-              <div class="flex-container">
-                <div class="flex-child">
+              <div class="row">
+                <div class="col">
                   <button
                     type="submit"
                     class="form-control btn btn-primary shadow-sm"
@@ -37,7 +37,7 @@
                     Search
                   </button>
                 </div>
-                <div class="flex-child">
+                <div class="col">
                   <button
                     type="button"
                     class="form-control btn btn-warning shadow-sm"
@@ -49,15 +49,15 @@
               </div>
             </form>
           </div>
-          <div class="col-6">
-            <div class="flex-container">
-              <div class="flex-child center">
+          <div class="col">
+            <div class="row">
+              <div class="col center">
                 <img src="" alt="" class="weather-icon" id="icon" />
                 <h3 id="city"></h3>
                 <h6 id="date"></h6>
                 <h6 id="description"></h6>
               </div>
-              <div class="flex-child">
+              <div class="col">
                 <span class="temperature" id="temperature"></span
                 ><span class="units">
                   <a href="#" id="celsius-link" class="active">°C</a> |
@@ -67,41 +67,18 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="flex-container mt-3">
-            <div class="flex-child card text-center h-200">
-              <div class="card-body">
-                <h5 class="card-title">Mon</h5>
-                <h2>☀️</h2>
-                <p class="card-text">25&#x2103;</p>
-              </div>
-            </div>
-            <div class="flex-child card text-center h-200">
-              <div class="card-body">
-                <h5 class="card-title">Tue</h5>
-                <h2>☁️</h2>
-                <p class="card-text">20&#x2103;</p>
-              </div>
-            </div>
-            <div class="flex-child card text-center h-200">
-              <div class="card-body">
-                <h5 class="card-title">Wed</h5>
-                <h2>🌦️</h2>
-                <p class="card-text">21&#x2103;</p>
-              </div>
-            </div>
-            <div class="flex-child card text-center h-200">
-              <div class="card-body">
-                <h5 class="card-title">Thu</h5>
-                <h2>🌩️</h2>
-                <p class="card-text">15&#x2103;</p>
-              </div>
-            </div>
-            <div class="flex-child card text-center h-200">
-              <div class="card-body">
-                <h5 class="card-title">Fri</h5>
-                <h2>⛅</h2>
-                <p class="card-text">22&#x2103;</p>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col">
+              <div class="weather-forecast-date">Thu</div>
+              <img
+                src="http://openweathermap.org/img/wn/02n@2x.png"
+                alt=""
+                width="36"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">18° </span
+                ><span class="weather-forecast-temperature-min">12° </span>
               </div>
             </div>
           </div>
