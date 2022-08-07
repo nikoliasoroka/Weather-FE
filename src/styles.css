@@ -26,9 +26,11 @@ a {
 }
 
 .weather-icon {
-  height: 64px;
-  width: 64px;
+  height: 70x;
+  width: 70px;
   margin: 0;
+  position: relative;
+  top: -6px;
 }
 
 .city,
@@ -45,10 +47,6 @@ a {
   top: -18px;
 }
 
-.search-form {
-  margin-bottom: 20px;
-}
-
 .center {
   text-align: center;
 }
@@ -59,7 +57,7 @@ a {
 }
 
 .weather-forecast {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   color: black;
 }
