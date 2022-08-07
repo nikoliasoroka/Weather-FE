@@ -4,11 +4,11 @@ body {
 
 h1 {
   color: #7c7c7c;
-  margin: 0px;
+  margin: none;
 }
 
 h6 {
-  margin: 0px;
+  margin: none;
   text-transform: capitalize;
 }
 
@@ -22,20 +22,27 @@ a {
   margin: 40px auto 20px;
   border-radius: 10px;
   max-width: 600px;
+  background-color: #dec3ec;
 }
 
 .weather-icon {
-  height: 54px;
-  width: 54px;
+  height: 64px;
+  width: 64px;
+  margin: 0;
 }
 
+.city,
 .temperature {
-  font-size: 58px;
+  font-size: 40px;
+  margin: 0px;
+}
+.city {
+  opacity: 0.5;
 }
 
 .units {
   position: relative;
-  top: -34px;
+  top: -18px;
 }
 
 .search-form {
@@ -49,15 +56,6 @@ a {
 .open-source {
   margin: 20px auto;
   max-width: 600px;
-}
-
-.active {
-  color: black;
-  cursor: default;
-}
-
-.active:hover {
-  text-decoration: none;
 }
 
 .weather-forecast {
