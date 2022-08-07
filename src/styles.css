@@ -22,7 +22,7 @@ a {
   margin: 40px auto 20px;
   border-radius: 10px;
   max-width: 600px;
-  background-color: #dec3ec;
+  background-color: #e4c3ec;
 }
 
 .weather-icon {
@@ -52,7 +52,7 @@ a {
 }
 
 .open-source {
-  margin: 20px auto;
+  margin: -10px auto;
   max-width: 600px;
 }
 

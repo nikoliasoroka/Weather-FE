@@ -37,7 +37,7 @@ function displayDate(timestamp) {
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let days = response.data.daily;
-  console.log(response.data.daily);
+
   let forecastHTML = "";
   days.forEach(function (day, index) {
     if (index < 5) {
@@ -108,4 +108,16 @@ function submit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", submit);
 
-search("Kyiv");
+let currentButton = document.querySelector("#currentButton");
+currentButton.addEventListener("click", getCurrentPosition);
+
+function handlePosition(pos) {
+  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(api).then(displayWeather);
+}
+
+function getCurrentPosition() {
+  navigator.geolocation.getCurrentPosition(handlePosition);
+}
+
+getCurrentPosition();
