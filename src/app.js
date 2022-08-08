@@ -120,4 +120,4 @@ function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(handlePosition);
 }
 
-getCurrentPosition();
+navigator.geolocation.getCurrentPosition(handlePosition, search("Kyiv"));
