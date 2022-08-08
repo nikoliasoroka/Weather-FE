@@ -117,7 +117,7 @@ function handlePosition(pos) {
 }
 
 function getCurrentPosition() {
-  navigator.geolocation.getCurrentPosition(handlePosition, search("Kyiv"));
+  navigator.geolocation.getCurrentPosition(handlePosition);
 }
 
-getCurrentPosition();
+navigator.geolocation.getCurrentPosition(handlePosition, search("Kyiv"));
