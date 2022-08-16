@@ -42,7 +42,7 @@ function displayForecast(response) {
   days.forEach(function (day, index) {
     if (index < 5) {
       forecastHTML += `
-      <div class="col">
+      <div>
               <div class="weather-forecast-date">${returnDay(
                 day.dt * 1000
               )}</div>
