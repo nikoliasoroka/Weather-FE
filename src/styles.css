@@ -22,7 +22,11 @@ a {
   margin: 40px auto 20px;
   border-radius: 10px;
   max-width: 600px;
-  background-color: #aff1fcc5;
+  background: linear-gradient(
+    68.6deg,
+    rgb(252, 165, 241) 1.8%,
+    rgb(181, 255, 255) 100.5%
+  );
 }
 
 .weather-icon {
