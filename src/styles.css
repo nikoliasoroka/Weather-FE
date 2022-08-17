@@ -62,14 +62,6 @@ a {
   color: black;
 }
 
-.forecast {
-  display: flex;
-}
-
-.forecast div {
-  flex: 1;
-}
-
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.5;

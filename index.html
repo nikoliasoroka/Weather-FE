@@ -19,7 +19,7 @@
     <div class="container">
       <div class="weather-app">
         <div class="row">
-          <div class="col">
+          <div class="col-sm-6">
             <form id="search-form">
               <input
                 type="search"
@@ -29,7 +29,7 @@
                 autocomplete="off"
               />
               <div class="row">
-                <div class="col">
+                <div class="col-sm mb-3">
                   <button
                     type="submit"
                     class="form-control btn btn-primary shadow-sm"
@@ -38,7 +38,7 @@
                     Search
                   </button>
                 </div>
-                <div class="col">
+                <div class="col-sm mb-3">
                   <button
                     type="button"
                     class="form-control btn btn-warning shadow-sm"
@@ -50,29 +50,19 @@
               </div>
             </form>
           </div>
-          <div class="col">
-            <div class="row">
-              <div class="col center">
-                <h3 class="city" id="city"></h3>
-              </div>
-              <div class="col center">
-                <span class="temperature" id="temperature"></span
-                ><span class="units">°C </span>
-              </div>
-              <div class="row">
-                <div class="col center">
-                  <h6 id="date"></h6>
-                  <h6 id="description"></h6>
-                </div>
-                <div class="col center">
-                  <img src="" alt="" class="weather-icon" id="icon" />
-                </div>
-              </div>
-            </div>
+          <div class="col-sm-3 center">
+            <h3 class="city" id="city"></h3>
+            <h6 id="date"></h6>
+            <h6 id="description"></h6>
+          </div>
+          <div class="col-sm-3 center">
+            <span class="temperature" id="temperature"></span
+            ><span class="units">°C </span>
+            <img src="" alt="" class="weather-icon" id="icon" />
           </div>
         </div>
         <div class="weather-forecast">
-          <div class="forecast" id="forecast"></div>
+          <div class="row" id="forecast"></div>
         </div>
       </div>
       <div class="open-source">
