@@ -22,7 +22,7 @@ a {
   margin: 40px auto 20px;
   border-radius: 10px;
   max-width: 600px;
-  background-color: violet;
+  /* background-color: violet; */
   /* background: linear-gradient(
     68.6deg,
     rgb(252, 165, 241) 1.8%,
